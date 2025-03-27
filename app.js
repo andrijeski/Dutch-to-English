@@ -29,8 +29,7 @@ app.get('/sample', translate.getSample);
 var httpConfig = config.get('server-http');
 
 var server = app.listen(httpConfig.port, httpConfig.host, function () {
-  var host = server.address().address;
   var port = server.address().port;
-
-  console.log('Demo1 app listening at http://%s:%s', host, port);
+  console.log('Dutch-to-English app listening at http://localhost:%s', port);
 });
+
